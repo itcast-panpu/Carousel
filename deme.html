@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>HR-I❤U</title>
+    <title>Document</title>
     <style>
         *{
             margin: 0;
@@ -10,8 +10,8 @@
         }
         body{
             perspective: 1000px;
-            /*background:linear-gradient(to left top whitesmoke wheat honeydew snow antiquewhite lightgoldenrodyellow lightgoldenrodyellow lightyellow);*/
-            background: black;
+            background:linear-gradient(to left top ,whitesmoke, wheat ,honeydew ,snow ,antiquewhite, lightgoldenrodyellow ,lightgoldenrodyellow, lightyellow);
+            /*background: black;*/
         }
         #box2{
             display: inline-block;
@@ -43,7 +43,7 @@
             background: blue;
             position: absolute;
             overflow: hidden;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
 
@@ -55,7 +55,7 @@
             background: black;
             position: absolute;
             overflow: hidden;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
         }
@@ -67,7 +67,7 @@
             /*background: palegreen;*/
             overflow: hidden;
             position: absolute;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
         }
@@ -79,7 +79,7 @@
             overflow: hidden;
             position: absolute;
             transition:all  1s;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
         }
@@ -87,9 +87,9 @@
             width: 300px;
             height: 300px;
             transform:rotateX(90deg) translateZ(150px);
-            background: white;
+            background: black;
             position: absolute;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
         }
@@ -97,9 +97,9 @@
             width: 300px;
             height: 300px;
             transform:rotateX(-90deg) translateZ(450px);
-            background: white;
+            background: black;
             position: absolute;
-            border: 3px solid whitesmoke;
+            border: 3px solid black;
             box-sizing: border-box;
             border-radius: 20px;
 
@@ -124,7 +124,7 @@
         }
         img{
             height: 100%;
-            w100%
+            width: 100%;
         }
         @keyframes play1 {
 
@@ -236,53 +236,31 @@
             <li style="background:url(images/2.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/3.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/4.jpg) no-repeat center /cover "></li>
-
         </ul>
     </div>
     <!-- 首屏-->
     <div class="minbox4">
         <ul class="min4child1">
-
             <li style="background:url(images/1.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/2.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/3.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/4.jpg) no-repeat center /cover "></li>
             <li style="background:url(images/1.jpg) no-repeat center /cover "></li>
-
         </ul>
     </div>
-    <div class="minbox5">HR-I❤U</div>
-    <div class="minbox6">HR-I❤U</div>
+    <div class="minbox5"></div>
+    <div class="minbox6"></div>
 </div>
-
 </body>
 </html>
 <script src="js/jquery-1.12.2.js"></script>
 <script>
-
         $(function(){
-            var body = document.getElementsByTagName("body")[0]
-             var box = document.getElementById("box1")
-             var newbox =box.cloneNode(true)
-            // var newbox1 =box.cloneNode(true)
-            // var newbox2 =box.cloneNode(true)
-
-             newbox.id=newbox.id.replace("box1","box2")
-            // newbox1.className=newbox1.className.replace("box","box1")
-            // newbox2.className=newbox2.className.replace("box","box1")
-            // console.log(newbox1)
-//            var newbox1 =$(".box").clone(false)
-
-            console.log(newbox)
-            // var newbox2 =$(box).clone(true)
-            // var newbox3 =$(box).clone(true)
-            // $(body).append(newbox)
-            $(body).append(newbox)
-            // $(body).append(newbox2)
-            // $(body).append(newbox3)
+            var body = document.getElementsByTagName("body")[0],
+              box = document.getElementById("box1"),
+              newbox =box.cloneNode(true);
+             newbox.id=newbox.id.replace("box1","box2");
+            console.log(newbox);
+            $(body).append(newbox);
         })
-
-
-
-
 </script>
